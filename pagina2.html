@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 6 - Página 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Laboratorio 6</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link " href="pagina1.html" >Página 1</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pagina2.html" aria-current="page">Página 2</a></li>
+                    <li class="nav-item"><a class="nav-link " href="pagina3.html" >Página 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="display-5 fw-bold">Página 2: Estilos con CSS</h1>
+        <p class="lead">CSS controla la apariencia de la página: colores, tamaños, márgenes y distribución de los elementos.</p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/seed/lab6-p2-a/600/380" class="card-img-top" alt="Imagen 1 de la página 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Selectores</h5>
+                        <p class="card-text">Los selectores indican a qué elementos se aplicará un estilo, por clase, por id o por etiqueta.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/seed/lab6-p2-b/600/380" class="card-img-top" alt="Imagen 2 de la página 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Modelo de caja</h5>
+                        <p class="card-text">Cada elemento está formado por contenido, relleno, borde y margen que determinan su tamaño.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/seed/lab6-p2-c/600/380" class="card-img-top" alt="Imagen 3 de la página 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Diseño flexible</h5>
+                        <p class="card-text">Flexbox y Grid permiten acomodar los elementos de forma responsiva en distintos tamaños de pantalla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion mt-5" id="acordeon2">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item2a" aria-expanded="true">¿Qué es la especificidad?</button>
+                </h2>
+                <div id="item2a" class="accordion-collapse collapse show" data-bs-parent="#acordeon2">
+                    <div class="accordion-body">Es el sistema que decide qué regla CSS tiene prioridad cuando varias coinciden con un mismo elemento.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2b" aria-expanded="false">¿Por qué usar Bootstrap?</button>
+                </h2>
+                <div id="item2b" class="accordion-collapse collapse" data-bs-parent="#acordeon2">
+                    <div class="accordion-body">Bootstrap es un framework que ofrece estilos y componentes listos para usar y responsivos.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
